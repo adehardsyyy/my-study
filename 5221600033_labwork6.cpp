@@ -21,10 +21,10 @@ int main()
       cout << "==== 7. Belah Ketupat" << endl;
       cout << endl;
       
-      cout << "Pilih Program yang ingin dijalankan: ";
-      cin >> input;
+        cout << "Pilih Program yang ingin dijalankan: ";
+        cin >> input;
 
-      switch (input)
+        switch (input)
       {
         // Lingkaran
         case 1 : {
@@ -85,29 +85,29 @@ int main()
 
         // Trapesium
         case 4 : {
-          int j, k, l, m, sisi1, sisi2, t, keliling, luas;
+            int j, k, l, m, sisi1, sisi2, t, keliling, luas;
 
-          cout << "Menghitung Luas dan Keliling Trapesium" << endl;
-          cout << "Input Sisi j          : ";
-          cin >> j;
-          cout << "Input Sisi k          : ";
-          cin >> k;
-          cout << "Input Sisi l          : ";
-          cin >> l;
-          cout << "Input Sisi m          : ";
-          cin >> m;
+            cout << "Menghitung Luas dan Keliling Trapesium" << endl;
+            cout << "Input Sisi j          : ";
+            cin >> j;
+            cout << "Input Sisi k          : ";
+            cin >> k;
+            cout << "Input Sisi l          : ";
+            cin >> l;
+            cout << "Input Sisi m          : ";
+            cin >> m;
 
-          sisi1 = j;
-          sisi2 = l;
-          t = m;
+            sisi1 = j;
+            sisi2 = l;
+            t = m;
 
-          keliling = j + k + l + m;
-          luas = ((sisi1 + sisi2) * t) / 2;
+            keliling = j + k + l + m;
+            luas = ((sisi1 + sisi2) * t) / 2;
 
-          cout << endl;
-          cout << "Keliling              : "  << keliling << endl;
-          cout << "Luas                  : "  << luas << endl;
-          break;
+            cout << endl;
+            cout << "Keliling              : "  << keliling << endl;
+            cout << "Luas                  : "  << luas << endl;
+            break;
         }
 
         //jajar genjang
@@ -115,21 +115,21 @@ int main()
         {
             int sisi1, sisi2, t, keliling, luas;
 
-          cout << "Menghitung Luas dan Keliling Trapesium" << endl;
-          cout << "Input Sisi atas       : ";
-          cin >> sisi1;
-          cout << "Input Sisi bawah      : ";
-          cin >> sisi2;
-          cout << "Input Sisi tinggi     : ";
-          cin >> t;
+            cout << "Menghitung Luas dan Keliling Trapesium" << endl;
+            cout << "Input Sisi atas       : ";
+            cin >> sisi1;
+            cout << "Input Sisi bawah      : ";
+            cin >> sisi2;
+            cout << "Input Sisi tinggi     : ";
+            cin >> t;
           
-          keliling = 2 * (sisi1 + sisi2);
-          luas = sisi1 * t;
+            keliling = 2 * (sisi1 + sisi2);
+            luas = sisi1 * t;
 
-          cout << endl;
-          cout << "keliling               :" << keliling << endl;
-          cout << "luas                   :" << luas << endl;
-          break;
+            cout << endl;
+            cout << "keliling               :" << keliling << endl;
+            cout << "luas                   :" << luas << endl;
+            break;
         }
 
         //layang-layang
@@ -137,23 +137,23 @@ int main()
         {
             int sisi1, sisi2, diagonal1, diagonal2, keliling, luas;
         
-          cout << "menghitung luas dan keliling layang-layang" << endl;
-          cout << "input sisi 1             :";
-          cin >> sisi1;
-          cout << "input sisi2              :";
-          cin >> sisi2;
-          cout << "input diagonal 1         :";
-          cin >> diagonal1;
-          cout << "input diagonal 2         :";
-          cin >> diagonal2;
+            cout << "menghitung luas dan keliling layang-layang" << endl;
+            cout << "input sisi 1             :";
+            cin >> sisi1;
+            cout << "input sisi2              :";
+            cin >> sisi2;
+            cout << "input diagonal 1         :";
+            cin >> diagonal1;
+            cout << "input diagonal 2         :";
+            cin >> diagonal2;
 
-          keliling = 2 * (sisi1 + sisi2);
-          luas = (diagonal1 * diagonal2) /2;
+            keliling = 2 * (sisi1 + sisi2);
+            luas = (diagonal1 * diagonal2) /2;
 
-          cout << endl;
-          cout << "keliling                 :" << keliling << endl;
-          cout << "luas                     :" << luas << endl;
-          break;
+            cout << endl;
+            cout << "keliling                 :" << keliling << endl;
+            cout << "luas                     :" << luas << endl;
+            break;
         }
 
         //belah ketupat
