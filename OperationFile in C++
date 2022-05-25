@@ -1,0 +1,51 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main()
+{
+    string fileName;
+
+    cout << "Masukan Nama file kamu: ";
+    cin >> fileName;
+    fileName += ".txt";
+    cout << "Nama file kamu adalah: " << fileName << "\n";
+
+    ofstream fout("./" + fileName);
+
+    if (fout.is_open())
+    {
+        while (true)
+        {
+            string text;
+            cout << "Masukkan teks: ";
+            cin >> text;
+
+            if (text == "berhenti")
+                break;
+            fout << text << endl;
+        }
+    }
+    else
+    {
+        cout << "File tidak bisa di buka\n";
+    }
+
+    fout.close();
+
+    char hapusVal;
+    cout << "apakah ingin menghapus file? [y/n] ";
+    cin >> hapusVal;
+
+    if (hapusVal == 'y')
+    {
+        char fileNameToChar[fileName.length() + 1];
+
+        for (int i = 0; i < fileName.length(); i++)
+        {
+            fileNameToChar[i] = fileName[i];
+        }
+
+        remove(fileNameToChar);
+    }
+}
